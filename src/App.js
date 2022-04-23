@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './layout/Header';
+import { Link, Outlet, Route, Router } from 'react-router-dom';
+import { Switch } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* pass to header which page it is in */}
+        <Header />
+      <nav>
+      <Link to='/login'>Login page</Link>       
+      <Link to='/themes'>Themes</Link>
+      </nav>
+     <Outlet />
+     
+    
+     
     </div>
   );
 }
