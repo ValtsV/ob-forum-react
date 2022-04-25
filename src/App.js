@@ -11,7 +11,7 @@ function App() {
         <Header />
       <nav>
       <Link to='/login'>Login page</Link>       
-      <Link to='/themes'>Themes</Link>
+      <Link to='/temas'>Themes</Link>
       </nav>
      <Outlet />
      

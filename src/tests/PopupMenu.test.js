@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { PopupMenu } from '../components/PopupMenu';
-import { Header } from '../layout/Header';
 
 describe('popup menu', () => {
     it('show links',  () => {

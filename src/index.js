@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { LoginPage } from './routes/LoginPage';
-import ThemesPage from './routes/ThemesPage';
+import {ThemesPage} from './routes/ThemesPage';
+import { DiscussionsPage } from './routes/DiscussionsPage';
+import { QuestionPage } from './routes/QuestionPage';
+import { NewQuestionPage } from './routes/NewQuestionPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
